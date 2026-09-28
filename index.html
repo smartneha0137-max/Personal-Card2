@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Personal Information Card</title>
+
+<style>
+body{
+  margin:0;
+  padding:20px;
+  background:#eeeeee;
+  font-family:Arial,sans-serif;
+}
+
+.card{
+  max-width:500px;
+  margin:auto;
+  background:white;
+  border:2px solid #222;
+  border-radius:18px;
+  padding:20px;
+  box-shadow:0 4px 12px #999;
+}
+
+.header{
+  text-align:center;
+  border-bottom:2px solid #222;
+  padding-bottom:12px;
+}
+
+.photo{
+  width:90px;
+  height:110px;
+  object-fit:cover;
+  border-radius:10px;
+  border:2px solid #333;
+}
+
+h2{
+  margin:8px 0 3px;
+}
+
+.warning{
+  text-align:center;
+  font-size:12px;
+  font-weight:bold;
+  margin:12px 0;
+  padding:8px;
+  border:1px solid #555;
+}
+
+.row{
+  display:flex;
+  padding:7px 0;
+  border-bottom:1px solid #ddd;
+}
+
+.label{
+  width:42%;
+  font-weight:bold;
+}
+
+.value{
+  width:58%;
+  word-break:break-word;
+}
+
+.qr{
+  text-align:center;
+  margin-top:18px;
+}
+
+.footer{
+  text-align:center;
+  margin-top:12px;
+  font-size:11px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="header">
+
+    <img src="photo.jpg" class="photo">
+
+    <h2>RAJU ADIWASI</h2>
+
+    <div>PERSONAL INFORMATION CARD</div>
+
+  </div>
+
+  <div class="warning">
+    PERSONAL RECORD — NOT A BANK ID
+  </div>
+
+  <div class="row">
+    <div class="label">Bank</div>
+    <div class="value">Axis Bank</div>
+  </div>
+
+  <div class="row">
+    <div class="label">Branch</div>
+    <div class="value">Satna (M.P.)</div>
+  </div>
+
+  <div class="row">
+    <div class="label">Customer ID</div>
+    <div class="value">972042157</div>
+  </div>
+
+  <div class="row">
+    <div class="label">Account No.</div>
+    <div class="value">••••••1738</div>
+  </div>
+
+  <div class="row">
+    <div class="label">Account Type</div>
+    <div class="value">Savings Bank Account</div>
+  </div>
+
+  <div class="row">
+    <div class="label">IFSC</div>
+    <div class="value">UTIB0000202</div>
+  </div>
+
+  <div class="row">
+    <div class="label">UPI ID</div>
+    <div class="value">smart.familys0137@axisbank</div>
+  </div>
+
+  <div class="row">
+    <div class="label">DOB</div>
+    <div class="value">10/06/1999</div>
+  </div>
+
+  <div class="qr">
+
+    <img
+      src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=RAJU%20ADIVASI%20-%20PERSONAL%20RECORD"
+      width="120"
+      height="120">
+
+    <div>Scan for Personal Record</div>
+
+  </div>
+
+  <div class="footer">
+    For personal record keeping only.<br>
+    NOT VALID AS BANK ID OR BANK PROOF.
+  </div>
+
+</div>
+
+</body>
+</html>
